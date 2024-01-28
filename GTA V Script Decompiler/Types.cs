@@ -11,7 +11,8 @@ namespace Decompiler
         public static readonly TypeInfo PBOOL = new(4, "BOOL*", "p_bool", "pb");
         public static readonly TypeInfo FLOAT = new(3, "float", "num", "f");
         public static readonly TypeInfo INT = new(3, "int", "num", "i");
-        public static readonly TypeInfo STRING = new(4, "char[]", "str", "c");
+        //public static readonly TypeInfo STRING = new(4, "char[]", "str", "c");
+        public static readonly TypeInfo STRING = new(4, "STRING", "str", "c");
         public static readonly TypeInfo PSTRING = new(4, "char*", "str", "s");
         public static readonly TypeInfo CPSTRING = new(4, "const char*", "str", "s");
         public static readonly TypeInfo UNKNOWN = new(0, "var", "unk", "u");
