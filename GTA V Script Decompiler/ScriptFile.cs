@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Forms.Design;
 
 namespace Decompiler
 {
@@ -100,7 +101,8 @@ namespace Decompiler
             {
                 if (Header.StaticsCount > 0)
                 {
-                    savestream.WriteLine("#region Local Var");
+                    // the appended // is for vscode to recognize the region and allow folding (via an extension)
+                    savestream.WriteLine("// #region Local Variables");
                     i++;
                     foreach (var s in Statics.GetDeclaration())
                     {
@@ -108,7 +110,7 @@ namespace Decompiler
                         i++;
                     }
 
-                    savestream.WriteLine("#endregion");
+                    savestream.WriteLine("// #endregion");
                     savestream.WriteLine("");
                     i += 2;
                 }

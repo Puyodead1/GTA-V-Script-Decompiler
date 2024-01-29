@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Administrator.WIN-O1QASAKJOT1\Desktop\GTA-V-Script-Decompiler\GTA V Script Decompiler\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Update="Disassembly.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UI\ProgressBar.cs">
+    <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\InputBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MainForm.cs">
+    <Compile Update="UI\ProgressBar.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
