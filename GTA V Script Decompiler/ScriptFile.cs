@@ -101,8 +101,7 @@ namespace Decompiler
             {
                 if (Header.StaticsCount > 0)
                 {
-                    // the appended // is for vscode to recognize the region and allow folding (via an extension)
-                    savestream.WriteLine("// #region Local Variables");
+                    savestream.WriteLine("#pragma region Local Variables");
                     i++;
                     foreach (var s in Statics.GetDeclaration())
                     {
@@ -110,7 +109,7 @@ namespace Decompiler
                         i++;
                     }
 
-                    savestream.WriteLine("// #endregion");
+                    savestream.WriteLine("#pragma endregion");
                     savestream.WriteLine("");
                     i += 2;
                 }

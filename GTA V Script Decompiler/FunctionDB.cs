@@ -50,7 +50,7 @@ namespace Decompiler
                 }
 
                 if (!uint.TryParse(tokens[0].Replace("0x", ""), System.Globalization.NumberStyles.HexNumber, null, out var hash))
-                    throw new FileFormatException("Cannot parse function hash");
+                    throw new FileFormatException("Cannot parse function hash; " + line);
 
                 if (!entryDict.ContainsKey(hash))
                     entryDict[hash] = new();

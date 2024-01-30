@@ -57,3 +57,4 @@ Global_1679804 MPAwdPlyBoolStatNamesArray
 Global_1679802 MPAwdPlyIntStatNamesArray
 Global_113021 g_sFloatingHelpData
 Global_32828 g_Private_Gamemode_Current
+Global_32829 g_Private_Gamemode_Joining
